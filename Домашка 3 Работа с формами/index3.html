@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Екатерина</title>
+</head>
+
+<body>
+
+    <form method="post" action="">
+        <fieldset>
+            <legend>Введите данные:</legend>
+            <input type="email" name="email"
+            required placeholder="Введите почту"><br>
+            <input type="number" name="phone"
+            required placeholder="Введите телефон"><br>
+            <input type="date" name="date"
+            required placeholder="Дата рождения"><br>
+            <input type="text" name="login"
+            required placeholder="Введите логин"><br>
+            <input type="password" name="pass"
+            required placeholder="Введите пароль"><br>
+            <input type="password" name="pass_two"
+            required placeholder="Повторите пароль"><br>
+            <input id="male" type="radio" name="gender" value="Мужской"><label for="male">Муж</label><br>
+            <input id="female" type="radio" name="gender" value="Женский"><label for="female">Жен</label><br>
+            <label for="age">Полных лет: </label><br>
+            <input type="number" step="1" min="1" max="100" value="1" id="age" name="age"><br>
+            <label for="comment">О себе:</label><br/>
+            <textarea id="about me" name="about me" placeholder="Не более 300 символов" maxlength="300" cols="40" rows="9"></textarea><br>
+            <input type="submit" value="Зарегистрироваться"><br><br>
+        </fieldset>
+    </form>
+<!--Формы, элементы форм, метки, элементы для ввода чисел, элементы ввода даты, textarea, элементы fieldset и legend-->
+
+    <form action="">
+        <input type="search" name="text"
+        required placeholder="Поиск..." size="20"><br>
+        <input type="image" src="icon.png" name="submit" /> 
+        <button type="reset">Отмена</button><br>
+        <input type="text" name="text" value="Это поле недоступно" disabled>
+    </form>
+<!--Кнопки-->
+
+    <form>
+        <input list="bookList" type="text" name="book" placeholder="Название книги" size="30">
+        <button type="submit">Выбрать</button>
+    </form>
+    <datalist id="bookList">
+        <option value="Ведьмак">
+        <option value="Гарри Потер">
+        <option value="Властелин колец">
+    </datalist>
+<!--Текстовые поля-->
+
+    <label for="sound">Громкость:</label> 1
+    <input type="range" step="1" min="0" max="100" value="10" id="sound" name="sound"/>100
+<!--Ползунок-->
+
+    <h2>Какие из перечисленных героев Вам понравились больше?</h2>
+    <input type="checkbox">Геральт<br>
+    <input type="checkbox">Йенифер<br>
+    <input type="checkbox">Цири<br>
+    <input type="checkbox">Лютик<br>
+    <input type="checkbox">Плотва<br>
+<!--Флажки-->
+
+    <label for="favcolor">Выбрать цвет</label>
+    <input type="color" list="colors" id="favcolor" name="favcolor">
+    <datalist id="colors">
+        <option value="#0000FF" label="blue">
+        <option value="#008000" label="green">
+        <option value="#ff0000" label="red">
+        <option value="#ffff00" label="yellow">
+        <option value="#000000" label="black"></option>
+    </datalist>
+<!--Элементы для ввода цвета-->
+
+<form enctype="multipart/form-data" method="post">
+        <input type="file" name="file" multiple>
+</form>
+<!--Отправка файлов-->
+
+<form method="get">
+    <label for="dish">Выберите блюдо:</label>
+     
+        <select id="dish" name="dish">
+            <optgroup label="Мясные блюда">
+                <option value="котлета">Котлета</option>
+                <option value="жаркое">Жаркое</option>
+                <option value="шашлык">Шашлык</option>
+            </optgroup>
+            <optgroup label="Рыбные блюда">
+                <option value="стейк из трески">Стейк из лосося</option>
+                <option value="котлета">Котлета</option>
+                <option value="лапша wok с лососем">Лапша wok с лососем</option>
+            </optgroup>
+        </select>
+
+</form>
+<!--Список Select-->
+
+</body>
+
+</html>
