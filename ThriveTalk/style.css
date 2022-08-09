@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    width: 100%;
+}
+
+.header__left {
+    background: #F4F9E2;
+    width: 78%;
+    height: 840px;
+}
+
+.header__logo {
+    position: absolute;
+    margin: 27px 454px 786px 179px;
+
+    font-family: 'Larsseit';
+    font-size: 24px;
+    line-height: 27px;
+    letter-spacing: -0.035em;
+
+    color: #62D0DF;
+}
+
+.header__nav {
+    position: absolute;
+    margin: 27px 192px 763px 601px;
+}
+
+
+.nav__link {
+    width: 51px;
+
+    font-family: 'Larsseit';
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+
+    color: #22356F;
+}
+
+.nav__link.active {
+    border-bottom: 1px solid #22356F;
+    padding-bottom: 12px;
+}
+
+
+.header__right {
+    width: 22%;
+}
